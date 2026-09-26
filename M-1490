@@ -16,12 +16,9 @@
   --light:#f4f7f9;
 }
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box;}
 
-html,
-body{
+html,body{
   margin:0;
   padding:0;
   width:100%;
@@ -38,14 +35,12 @@ body{
   padding:20px;
 }
 
-/* Main wrapper */
 .app{
   width:100%;
   max-width:960px;
   margin:0 auto;
 }
 
-/* Buttons */
 button{
   background:var(--navy);
   color:#fff;
@@ -57,9 +52,7 @@ button{
   font-weight:600;
 }
 
-button:hover{
-  background:var(--navy2);
-}
+button:hover{background:var(--navy2);}
 
 .toolrow{
   display:flex;
@@ -77,7 +70,6 @@ button:hover{
   min-height:15px;
 }
 
-/* Outer container */
 .card-wrap{
   width:100%;
   background:#fff;
@@ -86,7 +78,6 @@ button:hover{
   border:1px solid #c9d3dc;
 }
 
-/* Job card */
 .jobcard{
   width:100%;
   border:2.5px solid var(--navy);
@@ -96,7 +87,6 @@ button:hover{
   background:#fff;
 }
 
-/* Header */
 .jc-header{
   background:var(--navy);
   color:#fff;
@@ -128,12 +118,10 @@ button:hover{
   white-space:nowrap;
 }
 
-/* Body */
 .jc-body{
   padding:16px 18px;
 }
 
-/* Section heading */
 .section-title{
   background:var(--navy2);
   color:#fff;
@@ -144,11 +132,8 @@ button:hover{
   margin-top:10px;
 }
 
-.section-title:first-child{
-  margin-top:0;
-}
+.section-title:first-child{margin-top:0;}
 
-/* Field grid */
 .grid{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
@@ -156,7 +141,6 @@ button:hover{
   border-top:1px solid var(--border);
 }
 
-/* Individual field */
 .field{
   min-width:0;
   border-right:1px solid var(--border);
@@ -190,7 +174,6 @@ button:hover{
   background:#fff8ec;
 }
 
-/* Remarks field */
 .field.remarks{
   grid-column:span 3;
 }
@@ -199,7 +182,6 @@ button:hover{
   min-height:55px;
 }
 
-/* Footer */
 footer{
   text-align:center;
   color:#7a8b99;
@@ -213,45 +195,19 @@ footer a{
   text-decoration:none;
 }
 
-footer a:hover{
-  text-decoration:underline;
-}
+footer a:hover{text-decoration:underline;}
 
-/* Tablet */
 @media (max-width:768px){
-
-  body{
-    padding:12px;
-  }
-
-  .card-wrap{
-    max-width:700px;
-  }
-
-  .jc-body{
-    padding:12px;
-  }
-
-  .grid{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-
-  .field.remarks{
-    grid-column:span 2;
-  }
-
-  .jc-header{
-    padding:10px 12px;
-  }
-
-  .jc-header h2{
-    font-size:16px;
-  }
+  body{padding:12px;}
+  .card-wrap{max-width:700px;}
+  .jc-body{padding:12px;}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .field.remarks{grid-column:span 2;}
+  .jc-header{padding:10px 12px;}
+  .jc-header h2{font-size:16px;}
 }
 
-/* Mobile */
 @media (max-width:480px){
-
   body{
     padding:6px;
     background:#fff;
@@ -288,26 +244,18 @@ footer a:hover{
     letter-spacing:.3px;
   }
 
-  .jc-header .sub{
-    font-size:9px;
-  }
+  .jc-header .sub{font-size:9px;}
 
   .jc-header .cardno{
     padding:4px 7px;
     font-size:11px;
   }
 
-  .jc-body{
-    padding:8px;
-  }
+  .jc-body{padding:8px;}
 
-  .grid{
-    grid-template-columns:1fr;
-  }
+  .grid{grid-template-columns:1fr;}
 
-  .field.remarks{
-    grid-column:span 1;
-  }
+  .field.remarks{grid-column:span 1;}
 
   .section-title{
     margin-top:8px;
@@ -326,9 +274,7 @@ footer a:hover{
     font-size:12px;
   }
 
-  .status{
-    font-size:10px;
-  }
+  .status{font-size:10px;}
 
   footer{
     font-size:9.5px;
@@ -336,54 +282,25 @@ footer a:hover{
   }
 }
 
-/* Very small phones */
 @media (max-width:360px){
-
-  body{
-    padding:3px;
-  }
-
-  .jc-header{
-    padding:8px;
-  }
-
-  .jc-header h2{
-    font-size:13px;
-  }
-
-  .jc-header .sub{
-    font-size:8px;
-  }
+  body{padding:3px;}
+  .jc-header{padding:8px;}
+  .jc-header h2{font-size:13px;}
+  .jc-header .sub{font-size:8px;}
 
   .jc-header .cardno{
     font-size:10px;
     padding:3px 6px;
   }
 
-  .jc-body{
-    padding:6px;
-  }
-
-  .section-title{
-    font-size:10px;
-  }
-
-  .field .lbl{
-    font-size:10px;
-  }
-
-  .field .val{
-    font-size:11.5px;
-  }
+  .jc-body{padding:6px;}
+  .section-title{font-size:10px;}
+  .field .lbl{font-size:10px;}
+  .field .val{font-size:11.5px;}
 }
 
-/* Print */
 @media print{
-
-  .toolrow,
-  .status{
-    display:none !important;
-  }
+  .toolrow,.status{display:none !important;}
 
   body{
     background:#fff;
@@ -391,9 +308,7 @@ footer a:hover{
     display:block;
   }
 
-  .app{
-    max-width:none;
-  }
+  .app{max-width:none;}
 
   .card-wrap{
     border:none;
@@ -427,7 +342,7 @@ footer a:hover{
         </div>
 
         <div class="cardno" id="cardNoDisplay">
-          1490/26
+          1207/26
         </div>
 
       </div>
@@ -464,91 +379,47 @@ footer a:hover{
 
 <script>
 
-/* =========================================
-   FIELD DEFINITIONS
-   EXACT ORDER AS REQUESTED
-   ========================================= */
-
 const FIELDS = [
 
   ["receivedDate", "RECEIVED DATE"],
-
   ["department", "DEPARTMENT"],
-
   ["kw", "KW"],
-
   ["rpm", "RPM"],
-
   ["frame", "FRAME"],
-
   ["agency", "AGENCY"],
-
   ["jobCode", "JOB CODE"],
-
   ["sap", "SAP"],
-
   ["refurbishmentId", "REFURBISHMENT ID"],
-
   ["quantity", "QUANTITY"],
-
   ["jobDoneDate", "JOB DONE DATE"],
-
   ["jobDone", "JOB DONE"],
-
   ["remarks", "REMARKS"]
 
 ];
 
-
-/* =========================================
-   CURRENT CARD DATA
-   ========================================= */
-
 let card = {};
-
-
-/* =========================================
-   SAMPLE DATA
-   ========================================= */
 
 function sampleCard(){
 
   return {
 
-    receivedDate: "03.09.26",
-
-    department: "ACVS",
-
-    kw: "1.1",
-
-    rpm: "925",
-
-    frame: "100",
-
-    agency: "VD",
-
-    jobCode: "1490/26",
-
+    receivedDate: "",
+    department: "HSM-1",
+    kw: "13.8",
+    rpm: "300",
+    frame: "280",
+    agency: "KV",
+    jobCode: "1207/26",
     sap: "",
-
-    refurbishmentId: "1700065007",
-
+    refurbishmentId: "1700059815",
     quantity: "1",
-
-    jobDoneDate: "08.09.26",
-
-    jobDone: "Re-Winding",
-
+    jobDoneDate: "11.09.26",
+    jobDone: "Re- Winding",
     remarks: "Motor Found OK to Dispatch"
 
   };
 
 }
-
-
-/* =========================================
-   BUILD GRID
-   ========================================= */
 
 function buildGrid(){
 
@@ -576,7 +447,6 @@ function buildGrid(){
 
       labelDiv.innerText = label;
 
-
       const valueDiv =
         document.createElement("div");
 
@@ -589,11 +459,6 @@ function buildGrid(){
       valueDiv.innerText =
         card[key] || "";
 
-
-      /*
-       * Save when leaving field
-       */
-
       valueDiv.addEventListener(
         "blur",
         function(){
@@ -605,11 +470,6 @@ function buildGrid(){
 
         }
       );
-
-
-      /*
-       * Enter saves the field
-       */
 
       valueDiv.addEventListener(
         "keydown",
@@ -626,7 +486,6 @@ function buildGrid(){
         }
       );
 
-
       field.appendChild(labelDiv);
 
       field.appendChild(valueDiv);
@@ -637,11 +496,6 @@ function buildGrid(){
   );
 
 }
-
-
-/* =========================================
-   RENDER CARD
-   ========================================= */
 
 function renderCard(){
 
@@ -654,23 +508,12 @@ function renderCard(){
 
 }
 
-
-/* =========================================
-   UPDATE FIELD
-   ========================================= */
-
 function updateField(field,value){
 
   card[field] =
     value.trim
       ? value.trim()
       : value;
-
-
-  /*
-   * Update orange job number
-   * whenever Job Code changes.
-   */
 
   if(field === "jobCode"){
 
@@ -681,15 +524,9 @@ function updateField(field,value){
 
   }
 
-
   saveData();
 
 }
-
-
-/* =========================================
-   STATUS
-   ========================================= */
 
 function setStatus(msg){
 
@@ -699,19 +536,9 @@ function setStatus(msg){
 
 }
 
-
-/* =========================================
-   SAVE DATA
-   ========================================= */
-
 async function saveData(){
 
   try{
-
-    /*
-     * Use original application storage
-     * if available.
-     */
 
     if(
       typeof window.storage === "undefined"
@@ -731,14 +558,12 @@ async function saveData(){
 
     }
 
-
     const result =
       await window.storage.set(
         "motor-job-card-single",
         JSON.stringify(card),
         false
       );
-
 
     if(result){
 
@@ -760,10 +585,6 @@ async function saveData(){
   }
 
   catch(e){
-
-    /*
-     * Browser localStorage fallback
-     */
 
     try{
 
@@ -792,18 +613,9 @@ async function saveData(){
 
 }
 
-
-/* =========================================
-   LOAD DATA
-   ========================================= */
-
 async function loadData(){
 
   try{
-
-    /*
-     * First try original storage
-     */
 
     if(
       typeof window.storage !== "undefined"
@@ -814,7 +626,6 @@ async function loadData(){
           "motor-job-card-single",
           false
         );
-
 
       if(
         result &&
@@ -836,15 +647,10 @@ async function loadData(){
 
     else{
 
-      /*
-       * Browser fallback
-       */
-
       const saved =
         localStorage.getItem(
           "motor-job-card-single"
         );
-
 
       if(saved){
 
@@ -865,18 +671,12 @@ async function loadData(){
 
   catch(e){
 
-    /*
-     * If loading fails,
-     * use saved browser data.
-     */
-
     try{
 
       const saved =
         localStorage.getItem(
           "motor-job-card-single"
         );
-
 
       if(saved){
 
@@ -901,17 +701,11 @@ async function loadData(){
 
   }
 
-
   renderCard();
 
   setStatus("");
 
 }
-
-
-/* =========================================
-   START APPLICATION
-   ========================================= */
 
 loadData();
 
